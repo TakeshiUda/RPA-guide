@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>RPA活用ガイド</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img src="http://drive.google.com/uc?export=view&id=11_POaywyosZcqTagR1RnCzn03hTJW44b" width="168" height="28" alt="logo">
+              </a>
+          
+              <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Documentation
+                </a>
+            </div>
+          </nav>
+        </div>
+    </section>
+    <script>
+        const toggleBurger = () => {
+            let burgerIcon = document.getElementById('burger');
+            let dropMenu = document.getElementById('navbarMenu');
+            burgerIcon.classList.toggle('is-active');
+            dropMenu.classList.toggle('is-active');
+        };
+    </script>
+</body>
+</html>
